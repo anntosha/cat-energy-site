@@ -1,0 +1,378 @@
+.promo {
+  position: relative;
+  margin-top: 43px;
+}
+
+.promo__wrapper {
+  padding: 0 20px;
+}
+
+.promo__caption {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  margin-left: 20px;
+}
+
+.promo__text {
+  margin: 0;
+  margin-top: 24px;
+  padding-right: 14px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $greyish-brown;
+  text-align: left;
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.promo__border {
+  position: relative;
+  width: 122px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.promo__legend {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  width: 57px;
+  padding: 0 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: $greyish-brown;
+  background-color: $global-background;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+.promo__value {
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $black-two;
+  text-align: center;
+}
+
+.promo__price {
+  margin-top: 38px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__screen {
+  padding-bottom: 35px;
+}
+
+.promo__cat {
+  max-width: inherit;
+  margin-top: 23px;
+  margin-left: -22px;
+}
+
+.promo__range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.promo__toggle {
+  position: relative;
+  width: 81px;
+  height: 12px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    top: 3px;
+    left: 5px;
+    border-radius: 5px;
+    background-color: $leaf;
+  }
+}
+
+.promo__btn {
+  display: inline-block;
+  margin: 0 13px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 463px;
+      background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    }
+  }
+
+  .promo__right {
+    margin-top: 242px;
+    padding-top: 350px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .promo__wrapper {
+    padding: 0 30px;
+  }
+
+  .promo__caption {
+    margin-left: 30px;
+    padding-top: 44px;
+  }
+
+  .promo__text {
+    margin-top: 64px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .promo__cover {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo__container {
+    margin-top: 53px;
+  }
+
+  .promo__border {
+    height: 70px;
+    margin-right: 42px;
+    width: 160px;
+  }
+
+  .promo__legend {
+    width: 127px;
+    margin: 0;
+    top: 63px;
+    left: 50%;
+    padding: 0 3px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .promo__value {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .promo__price {
+    margin-top: 60px;
+    width: 174px;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+  }
+
+  .promo__cat {
+    position: absolute;
+    bottom: 118px;
+    left: 52.5%;
+    width: 680px;
+    height: 517px;
+    transform: translate(-50%, 0);
+  }
+
+  .promo__range {
+    margin-top: 17px;
+  }
+
+  .promo__scale {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    cursor: pointer;
+  }
+
+  .promo__toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    transform: translate(-46%, -50%);
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: solid 2px $leaf;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 50%;
+      left: 50%;
+      border-radius: 5px;
+      background-color: $leaf;
+      transform: translate(-46%, -50%);
+    }
+
+    &:hover::after {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::after {
+      border: 2px solid $leaf;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .promo__btn {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 8px;
+      width: 45px;
+      height: 1px;
+      border-bottom: 1px dashed #dcdcdc;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: $desktop-width;
+    padding-left: 40px;
+  }
+
+  .promo__left {
+    width: 435;
+  }
+
+  .promo__right {
+    position: relative;
+    margin-top: 410px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: none;
+  }
+
+  .promo__content {
+    position: relative;
+    padding-bottom: 39px;
+    background-image: linear-gradient(to right, #f2f2f2 71.8%, #eaeaea 28.2%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+      width: 500px;
+      height: 100%;
+      background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      transform: translate(113.6%, 0);
+    }
+  }
+
+  .promo__caption {
+    width: 100%;
+    margin-top: 68px;
+    margin-left: 40px;
+    margin-bottom: 75px;
+    padding-top: 0;
+  }
+
+  .promo__text {
+    width: 431px;
+    padding-top: 6px;
+  }
+
+  .promo__cover {
+    flex-direction: column;
+  }
+
+  .promo__container {
+    margin-top: 68px;
+    justify-content: flex-start;
+  }
+
+  .promo__legend {
+    background-color: #f2f2f2;
+  }
+
+  .promo__price {
+    margin-top: 58px;
+    width: 330px;
+    text-align: left;
+
+    span {
+      margin-right: 60px;
+    }
+  }
+
+  .promo__cat {
+    position: absolute;
+    bottom: 98px;
+    left: 51%;
+    width: 680px;
+    height: 517px;
+    transform: translate(-50%, 0);
+  }
+
+  .promo__range {
+    margin-top: -45px;
+  }
+}

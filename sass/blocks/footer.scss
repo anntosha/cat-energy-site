@@ -1,0 +1,164 @@
+.footer {
+  margin-top: -1px;
+  background-color: $white-three;
+  padding-bottom: 15px;
+}
+
+.footer__wrapper {
+  padding: 0 20px;
+}
+
+.footer__img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 31px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.social__item {
+  width: 21px;
+  padding-top: 24px;
+  margin: 0 18px;
+
+  &:hover {
+    path {
+      fill: $leaf;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link {
+  path {
+    fill: #666666;
+  }
+}
+
+.footer__developer {
+  margin-top: 12px;
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  svg {
+    margin-right: -8px;
+  }
+
+  path {
+    fill: #666666;
+  }
+
+  &:hover {
+    path {
+      fill: $leaf;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+  }
+
+  .footer__img {
+    padding-top: 33px;
+  }
+
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    width: 124px;
+    margin-left: 15px;
+    border: 0;
+  }
+
+  .social__item {
+    width: auto;
+    margin: 0 13px;
+  }
+
+  .social__link {
+    &--vk {
+      svg {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
+    &--instagram {
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      svg {
+        width: 14px;
+        height: 28px;
+      }
+    }
+  }
+
+  .footer__developer {
+    margin-top: -2px;
+
+    p {
+      margin-right: 16px;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding: 32px 40px;
+  }
+
+  .footer__developer {
+    margin-top: 7px;
+
+    p {
+      margin-right: 15px;
+      text-align: right;
+    }
+  }
+}

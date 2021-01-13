@@ -1,0 +1,39 @@
+.green-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 68%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $leaf;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+
+  &--contacts {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $leaf;
+      transform: translate(0, -50%);
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .green-line {
+    &--contacts {
+      &::before {
+        top: 68%;
+      }
+    }
+  }
+}

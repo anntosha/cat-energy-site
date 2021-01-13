@@ -1,0 +1,262 @@
+.preferences {
+  margin: 0;
+}
+
+.preferences__wrapper {
+  padding: 0 20px;
+}
+
+.preferences__block {
+  position: relative;
+  margin-bottom: 21px;
+  padding: 22px 20px;
+  background-color: $white-three;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 23px;
+    width: 50px;
+    height: 50px;
+    background-color: $leaf;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  &--slimcat {
+    &::after {
+      top: 21px;
+      left: 31px;
+      width: 35px;
+      height: 49px;
+      background-image: url("../img/icon-cat-slim.svg");
+      z-index: 1;
+    }
+  }
+
+  &--procat {
+    &::after {
+      top: 35px;
+      left: 13px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/icon-cat-pro.svg");
+      z-index: 1;
+    }
+  }
+}
+
+.preferences__caption {
+  margin: 0;
+  margin-top: 7px;
+  padding-left: 71px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.preferences__text {
+  position: relative;
+  padding-top: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $greyish-brown;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 127px;
+    left: 0;
+    width: 240px;
+    height: 1px;
+    background-color: lightgray;
+    z-index: 1;
+  }
+}
+
+.preferences__link {
+  display: block;
+  padding-top: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black-two;
+
+  svg {
+    padding-left: 7px;
+  }
+
+  &:hover {
+    svg {
+      width: 34px;
+    }
+  }
+
+  &:active {
+    svg {
+      width: 34px;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .preferences__wrapper {
+    padding: 0 30px;
+  }
+
+  .preferences__block {
+    margin-bottom: 31px;
+    padding-top: 74px;
+    padding-right: 62px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+
+    &::before {
+      top: 91px;
+      left: 447px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slimcat {
+      &::after {
+        top: 79px;
+        left: 475px;
+        width: 141px;
+        height: 194px;
+      }
+
+      .preferences__text {
+        width: 372px;
+      }
+    }
+
+    &--procat {
+      &::after {
+        top: 134px;
+        left: 412px;
+        width: 268px;
+        height: 113px;
+      }
+
+      .preferences__text {
+        width: 340px;
+      }
+    }
+  }
+
+  .preferences__caption {
+    margin: 0;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .preferences__text {
+    padding-top: 9px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      top: 0;
+      width: 0;
+      height: 0;
+      background-color: none;
+      z-index: 0;
+    }
+  }
+
+  .preferences__link {
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 20px;
+
+    svg {
+      width: 24px;
+      height: 16px;
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preferences__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+
+  .preferences__block {
+    width: 455px;
+    padding-left: 53px;
+
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slimcat {
+      &::after {
+        top: 41px;
+        left: 67px;
+        width: 71px;
+        height: 97px;
+      }
+
+      .preferences__text {
+        width: 462px;
+      }
+    }
+
+    &--procat {
+      &::after {
+        top: 68px;
+        left: 35px;
+        width: 134px;
+        height: 57px;
+      }
+
+      .preferences__text {
+        width: 445px;
+      }
+    }
+  }
+
+  .preferences__caption {
+    padding-left: 162px;
+  }
+
+  .preferences__text {
+    padding-top: 60px;
+  }
+
+  .preferences__link {
+    padding-top: 15px;
+
+    svg {
+      width: 24px;
+      height: 18px;
+      padding-left: 20px;
+    }
+  }
+}
