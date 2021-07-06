@@ -1,2 +1,2 @@
 # cat-energy.github.io
-Учебный проэкт
+Pet project
